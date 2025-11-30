@@ -1,0 +1,58 @@
+chunk-373CG7ZK.js?v=4cee4a1b:21549 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+VM4 sandbox_bundle:2 Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.
+warnAboutInsecureCSP @ VM4 sandbox_bundle:2
+Header.jsx:27 Error loading balance: TypeError: window.electronAPI.getCurrentBalance is not a function
+    at loadBalance (Header.jsx:24:45)
+    at Header.jsx:12:5
+    at commitHookEffectListMount (chunk-373CG7ZK.js?v=4cee4a1b:16913:34)
+    at commitPassiveMountOnFiber (chunk-373CG7ZK.js?v=4cee4a1b:18154:19)
+    at commitPassiveMountEffects_complete (chunk-373CG7ZK.js?v=4cee4a1b:18127:17)
+    at commitPassiveMountEffects_begin (chunk-373CG7ZK.js?v=4cee4a1b:18117:15)
+    at commitPassiveMountEffects (chunk-373CG7ZK.js?v=4cee4a1b:18107:11)
+    at flushPassiveEffectsImpl (chunk-373CG7ZK.js?v=4cee4a1b:19488:11)
+    at flushPassiveEffects (chunk-373CG7ZK.js?v=4cee4a1b:19445:22)
+    at chunk-373CG7ZK.js?v=4cee4a1b:19326:17
+loadBalance @ Header.jsx:27
+Dashboard.jsx:23 Error loading dashboard: TypeError: window.electronAPI.getCurrentBalance is not a function
+    at loadDashboardData (Dashboard.jsx:17:48)
+    at Dashboard.jsx:12:5
+    at commitHookEffectListMount (chunk-373CG7ZK.js?v=4cee4a1b:16913:34)
+    at commitPassiveMountOnFiber (chunk-373CG7ZK.js?v=4cee4a1b:18154:19)
+    at commitPassiveMountEffects_complete (chunk-373CG7ZK.js?v=4cee4a1b:18127:17)
+    at commitPassiveMountEffects_begin (chunk-373CG7ZK.js?v=4cee4a1b:18117:15)
+    at commitPassiveMountEffects (chunk-373CG7ZK.js?v=4cee4a1b:18107:11)
+    at flushPassiveEffectsImpl (chunk-373CG7ZK.js?v=4cee4a1b:19488:11)
+    at flushPassiveEffects (chunk-373CG7ZK.js?v=4cee4a1b:19445:22)
+    at chunk-373CG7ZK.js?v=4cee4a1b:19326:17
+loadDashboardData @ Dashboard.jsx:23
+Header.jsx:27 Error loading balance: TypeError: window.electronAPI.getCurrentBalance is not a function
+    at loadBalance (Header.jsx:24:45)
+    at Header.jsx:12:5
+    at commitHookEffectListMount (chunk-373CG7ZK.js?v=4cee4a1b:16913:34)
+    at invokePassiveEffectMountInDEV (chunk-373CG7ZK.js?v=4cee4a1b:18322:19)
+    at invokeEffectsInDev (chunk-373CG7ZK.js?v=4cee4a1b:19699:19)
+    at commitDoubleInvokeEffectsInDEV (chunk-373CG7ZK.js?v=4cee4a1b:19684:15)
+    at flushPassiveEffectsImpl (chunk-373CG7ZK.js?v=4cee4a1b:19501:13)
+    at flushPassiveEffects (chunk-373CG7ZK.js?v=4cee4a1b:19445:22)
+    at chunk-373CG7ZK.js?v=4cee4a1b:19326:17
+    at workLoop (chunk-373CG7ZK.js?v=4cee4a1b:195:42)
+loadBalance @ Header.jsx:27
+Dashboard.jsx:23 Error loading dashboard: TypeError: window.electronAPI.getCurrentBalance is not a function
+    at loadDashboardData (Dashboard.jsx:17:48)
+    at Dashboard.jsx:12:5
+    at commitHookEffectListMount (chunk-373CG7ZK.js?v=4cee4a1b:16913:34)
+    at invokePassiveEffectMountInDEV (chunk-373CG7ZK.js?v=4cee4a1b:18322:19)
+    at invokeEffectsInDev (chunk-373CG7ZK.js?v=4cee4a1b:19699:19)
+    at commitDoubleInvokeEffectsInDEV (chunk-373CG7ZK.js?v=4cee4a1b:19684:15)
+    at flushPassiveEffectsImpl (chunk-373CG7ZK.js?v=4cee4a1b:19501:13)
+    at flushPassiveEffects (chunk-373CG7ZK.js?v=4cee4a1b:19445:22)
+    at chunk-373CG7ZK.js?v=4cee4a1b:19326:17
+    at workLoop (chunk-373CG7ZK.js?v=4cee4a1b:195:42)
+loadDashboardData @ Dashboard.jsx:23

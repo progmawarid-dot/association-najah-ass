@@ -1,0 +1,64 @@
+VM5:30 ✅ Preload script loaded successfully
+chunk-373CG7ZK.js?v=4cee4a1b:21549 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+VM4 sandbox_bundle:2 Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.
+warnAboutInsecureCSP @ VM4 sandbox_bundle:2
+BankRegister.jsx:26 Error loading bank transactions: TypeError: window.electronAPI.getBankTransactions is not a function
+    at loadTransactions (BankRegister.jsx:23:45)
+    at BankRegister.jsx:16:5
+    at commitHookEffectListMount (chunk-373CG7ZK.js?v=4cee4a1b:16913:34)
+    at commitPassiveMountOnFiber (chunk-373CG7ZK.js?v=4cee4a1b:18154:19)
+    at commitPassiveMountEffects_complete (chunk-373CG7ZK.js?v=4cee4a1b:18127:17)
+    at commitPassiveMountEffects_begin (chunk-373CG7ZK.js?v=4cee4a1b:18117:15)
+    at commitPassiveMountEffects (chunk-373CG7ZK.js?v=4cee4a1b:18107:11)
+    at flushPassiveEffectsImpl (chunk-373CG7ZK.js?v=4cee4a1b:19488:11)
+    at flushPassiveEffects (chunk-373CG7ZK.js?v=4cee4a1b:19445:22)
+    at commitRootImpl (chunk-373CG7ZK.js?v=4cee4a1b:19414:13)
+loadTransactions @ BankRegister.jsx:26
+(anonymous) @ BankRegister.jsx:16
+commitHookEffectListMount @ chunk-373CG7ZK.js?v=4cee4a1b:16913
+commitPassiveMountOnFiber @ chunk-373CG7ZK.js?v=4cee4a1b:18154
+commitPassiveMountEffects_complete @ chunk-373CG7ZK.js?v=4cee4a1b:18127
+commitPassiveMountEffects_begin @ chunk-373CG7ZK.js?v=4cee4a1b:18117
+commitPassiveMountEffects @ chunk-373CG7ZK.js?v=4cee4a1b:18107
+flushPassiveEffectsImpl @ chunk-373CG7ZK.js?v=4cee4a1b:19488
+flushPassiveEffects @ chunk-373CG7ZK.js?v=4cee4a1b:19445
+commitRootImpl @ chunk-373CG7ZK.js?v=4cee4a1b:19414
+commitRoot @ chunk-373CG7ZK.js?v=4cee4a1b:19275
+performSyncWorkOnRoot @ chunk-373CG7ZK.js?v=4cee4a1b:18893
+flushSyncCallbacks @ chunk-373CG7ZK.js?v=4cee4a1b:9117
+(anonymous) @ chunk-373CG7ZK.js?v=4cee4a1b:18625
+Show 12 more frames
+Show less
+BankRegister.jsx:26 Error loading bank transactions: TypeError: window.electronAPI.getBankTransactions is not a function
+    at loadTransactions (BankRegister.jsx:23:45)
+    at BankRegister.jsx:16:5
+    at commitHookEffectListMount (chunk-373CG7ZK.js?v=4cee4a1b:16913:34)
+    at invokePassiveEffectMountInDEV (chunk-373CG7ZK.js?v=4cee4a1b:18322:19)
+    at invokeEffectsInDev (chunk-373CG7ZK.js?v=4cee4a1b:19699:19)
+    at commitDoubleInvokeEffectsInDEV (chunk-373CG7ZK.js?v=4cee4a1b:19684:15)
+    at flushPassiveEffectsImpl (chunk-373CG7ZK.js?v=4cee4a1b:19501:13)
+    at flushPassiveEffects (chunk-373CG7ZK.js?v=4cee4a1b:19445:22)
+    at commitRootImpl (chunk-373CG7ZK.js?v=4cee4a1b:19414:13)
+    at commitRoot (chunk-373CG7ZK.js?v=4cee4a1b:19275:13)
+loadTransactions @ BankRegister.jsx:26
+(anonymous) @ BankRegister.jsx:16
+commitHookEffectListMount @ chunk-373CG7ZK.js?v=4cee4a1b:16913
+invokePassiveEffectMountInDEV @ chunk-373CG7ZK.js?v=4cee4a1b:18322
+invokeEffectsInDev @ chunk-373CG7ZK.js?v=4cee4a1b:19699
+commitDoubleInvokeEffectsInDEV @ chunk-373CG7ZK.js?v=4cee4a1b:19684
+flushPassiveEffectsImpl @ chunk-373CG7ZK.js?v=4cee4a1b:19501
+flushPassiveEffects @ chunk-373CG7ZK.js?v=4cee4a1b:19445
+commitRootImpl @ chunk-373CG7ZK.js?v=4cee4a1b:19414
+commitRoot @ chunk-373CG7ZK.js?v=4cee4a1b:19275
+performSyncWorkOnRoot @ chunk-373CG7ZK.js?v=4cee4a1b:18893
+flushSyncCallbacks @ chunk-373CG7ZK.js?v=4cee4a1b:9117
+(anonymous) @ chunk-373CG7ZK.js?v=4cee4a1b:18625
+Show 11 more frames
+Show less

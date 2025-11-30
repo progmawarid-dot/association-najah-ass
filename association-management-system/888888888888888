@@ -1,0 +1,31 @@
+VM5:43 ✅ Preload script loaded successfully
+chunk-373CG7ZK.js?v=4cee4a1b:21549 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+VM4 sandbox_bundle:2 Electron Security Warning (Insecure Content-Security-Policy) This renderer process has either no Content Security
+  Policy set or a policy with "unsafe-eval" enabled. This exposes users of
+  this app to unnecessary security risks.
+
+For more information and help, consult
+https://electronjs.org/docs/tutorial/security.
+This warning will not show up
+once the app is packaged.
+warnAboutInsecureCSP @ VM4 sandbox_bundle:2
+CashRegister.jsx:254 Error adding transaction: Error: Error invoking remote method 'add-cash-transaction': Error: CHECK constraint failed: movement_type IN ('credit', 'debit')
+handleSubmit @ CashRegister.jsx:254
+await in handleSubmit (async)
+callCallback2 @ chunk-373CG7ZK.js?v=4cee4a1b:3672
+invokeGuardedCallbackDev @ chunk-373CG7ZK.js?v=4cee4a1b:3697
+invokeGuardedCallback @ chunk-373CG7ZK.js?v=4cee4a1b:3731
+invokeGuardedCallbackAndCatchFirstError @ chunk-373CG7ZK.js?v=4cee4a1b:3734
+executeDispatch @ chunk-373CG7ZK.js?v=4cee4a1b:7012
+processDispatchQueueItemsInOrder @ chunk-373CG7ZK.js?v=4cee4a1b:7032
+processDispatchQueue @ chunk-373CG7ZK.js?v=4cee4a1b:7041
+dispatchEventsForPlugins @ chunk-373CG7ZK.js?v=4cee4a1b:7049
+(anonymous) @ chunk-373CG7ZK.js?v=4cee4a1b:7172
+batchedUpdates$1 @ chunk-373CG7ZK.js?v=4cee4a1b:18911
+batchedUpdates @ chunk-373CG7ZK.js?v=4cee4a1b:3577
+dispatchEventForPluginEventSystem @ chunk-373CG7ZK.js?v=4cee4a1b:7171
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-373CG7ZK.js?v=4cee4a1b:5476
+dispatchEvent @ chunk-373CG7ZK.js?v=4cee4a1b:5470
+dispatchDiscreteEvent @ chunk-373CG7ZK.js?v=4cee4a1b:5447
+Show 15 more frames
+Show less
