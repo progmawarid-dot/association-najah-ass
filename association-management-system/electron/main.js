@@ -198,3 +198,18 @@ function setupIpcHandlers() {
   });
 
 }
+
+  // --- 6. سجل الصندوق (CASH REGISTER) ---
+  ipcMain.handle('get-current-balance', (event, association_id) => {
+    try {
+      const result = executeQuery(`SELECT SUM(CASE WHEN movement_type = 'receipt' THEN amount ELSE -amount END) as balance FROM cash_transactions WHERE association_id = ${association_id}`);
+      return result[0]?.balance || 0;
+    } catch(e) {
+      return 0;
+    }
+  });
+
+  ipcMain.handle('get-cash-transactions', (event, filters) => {
+    let query = `SELECT * FROM cash_transactions WHERE association_id = ${filters.association_id} ORDER BY transaction_date DESC`;
+    return executeQuery(query);
+  });
