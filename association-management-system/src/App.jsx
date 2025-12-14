@@ -14,6 +14,7 @@ import IncomeRegister from './pages/income/IncomeRegister';
 import ExpenseRegister from './pages/expense/ExpenseRegister';
 import Reports from './pages/Reports';
 import Settings from './pages/Settings';
+import SetupWizard from './components/SetupWizard';
 // إذا لم تنشئ صفحة الشيكات بعد، يمكنك تعليق السطر التالي مؤقتاً
 import ChecksList from './pages/checks/ChecksList'; 
 

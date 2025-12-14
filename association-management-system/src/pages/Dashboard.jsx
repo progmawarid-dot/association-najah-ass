@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAssociation } from '../context/AssociationContext';
 
-
 function Dashboard() {
   const navigate = useNavigate();
   const { selectedAssociation, currentAssociation } = useAssociation();
@@ -62,13 +61,15 @@ function Dashboard() {
               <div className="stat-icon">💰</div>
               <div className="stat-info">
                 <h3>الرصيد الحالي</h3>
-                                <p className="stat-value">{(stats.total_balance || 0).toFixed(2)} درهم</p>
+                <p className="stat-value">{(stats.total_balance || 0).toFixed(2)} درهم</p>
+              </div>
+            </div>
 
             <div className="stat-card income">
               <div className="stat-icon">📈</div>
               <div className="stat-info">
                 <h3>إجمالي المداخيل</h3>
-                <p className="stat-value">{stats.total_income.toFixed(2)} درهم</p>
+                <p className="stat-value">{(stats.total_income || 0).toFixed(2)} درهم</p>
               </div>
             </div>
 
@@ -76,7 +77,7 @@ function Dashboard() {
               <div className="stat-icon">📉</div>
               <div className="stat-info">
                 <h3>إجمالي المصاريف</h3>
-                <p className="stat-value">{(stats.total_income || 0).toFixed((stats.total_expenses || 0).toFixed(2)toFixed(2)} درهم</p>
+                <p className="stat-value">{(stats.total_expenses || 0).toFixed(2)} درهم</p>
               </div>
             </div>
 
@@ -88,7 +89,6 @@ function Dashboard() {
               </div>
             </div>
           </div>
-
           <div className="quick-actions">
             <h2>الوصول السريع</h2>
             <div className="actions-grid">
@@ -98,7 +98,7 @@ function Dashboard() {
               >
                 <div className="action-icon">🏦</div>
                 <h3>سجل الصندوق</h3>
-                <p className="action-balance">{stats.cash_balance.toFixed(2)} درهم</p>
+                <p className="action-balance">{(stats.cash_balance || 0).toFixed(2)} درهم</p>
               </button>
 
               <button 
@@ -107,7 +107,7 @@ function Dashboard() {
               >
                 <div className="action-icon">🏛️</div>
                 <h3>سجل البنك</h3>
-                <p className="action-balance">{stats.bank_balance.toFixed(2)} درهم</p>
+                <p className="action-balance">{(stats.bank_balance || 0).toFixed(2)} درهم</p>
               </button>
 
               <button 
