@@ -213,3 +213,22 @@ function setupIpcHandlers() {
     let query = `SELECT * FROM cash_transactions WHERE association_id = ${filters.association_id} ORDER BY transaction_date DESC`;
     return executeQuery(query);
   });
+
+    // --- 7. سجل البنك (BANK REGISTER) ---
+  ipcMain.handle('get-bank-transactions', (event, filters) => {
+    let query = `SELECT * FROM bank_transactions WHERE association_id = ${filters.association_id} ORDER BY transaction_date DESC`;
+    return executeQuery(query);
+  });
+
+  ipcMain.handle('add-bank-transaction', async (event, data) => {
+    const database = db();
+    try {
+      database.run(`INSERT INTO bank_transactions (association_id, transaction_date, operation_label, movement_type, amount, document_type, document_number, check_number, notes) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        [data.association_id, data.transaction_date, data.operation_label, data.movement_type, data.amount, data.document_type, data.document_number, data.check_number, data.notes]);
+      saveDatabase();
+      return { success: true };
+    } catch (err) {
+      console.error('Error adding bank transaction:', err);
+      throw err;
+    }
+  });
