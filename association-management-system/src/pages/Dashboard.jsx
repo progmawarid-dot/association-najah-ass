@@ -62,9 +62,7 @@ function Dashboard() {
               <div className="stat-icon">💰</div>
               <div className="stat-info">
                 <h3>الرصيد الحالي</h3>
-                <p className="stat-value">{stats.total_balance.toFixed(2)} درهم</p>
-              </div>
-            </div>
+                                <p className="stat-value">{(stats.total_balance || 0).toFixed(2)} درهم</p>
 
             <div className="stat-card income">
               <div className="stat-icon">📈</div>
@@ -78,7 +76,7 @@ function Dashboard() {
               <div className="stat-icon">📉</div>
               <div className="stat-info">
                 <h3>إجمالي المصاريف</h3>
-                <p className="stat-value">{stats.total_expenses.toFixed(2)} درهم</p>
+                <p className="stat-value">{(stats.total_income || 0).toFixed((stats.total_expenses || 0).toFixed(2)toFixed(2)} درهم</p>
               </div>
             </div>
 
